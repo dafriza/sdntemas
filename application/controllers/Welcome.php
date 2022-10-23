@@ -201,10 +201,12 @@ class Welcome extends CI_Controller
 		$this->email->from('dafrizaq@gmail.com', $data['name']);
 		$this->email->to('sdntemas1batu@gmail.com');
 
-		$this->email->subject($data['subject']);
-		$this->email->message($data['message']);
+		$this->email->subject('Dari : '.$data['email'].', '.$data['subject']);
+		$this->email->message('Dari : '.$data['email'].'\n'.$data['message']);
 		if ($this->email->send()) {
-			print_r("berhasil");
+			$this->session->set_flashdata('success', 'Pesan berhasil terkirim');
+			redirect(base_url('contact'));
+			// print_r("berhasil");
 		} else {
 			print_r($this->email->print_debugger());
 			print_r("gagal");

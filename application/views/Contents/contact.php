@@ -38,7 +38,7 @@
 							<i class="icon-room"></i>
 							<h4 class="mb-2">Location:</h4>
 							<p>
-							Jl. Patimura No.23, Temas, Kec. Batu, Kota Batu, Jawa Timur 65315
+								Jl. Patimura No.23, Temas, Kec. Batu, Kota Batu, Jawa Timur 65315
 							</p>
 						</div>
 
@@ -65,26 +65,26 @@
 					</div>
 				</div>
 				<div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-					<?= form_open(base_url('sendMail')) ;?>
-						<div class="row">
-							<div class="col-6 mb-3">
-								<input type="text" class="form-control" placeholder="Your Name" name="name"/>
-							</div>
-							<div class="col-6 mb-3">
-								<input type="email" class="form-control" placeholder="email@gmail.com" name="email" />
-							</div>
-							<div class="col-12 mb-3">
-								<input type="text" class="form-control" placeholder="Subject" name="subject"/>
-							</div>
-							<div class="col-12 mb-3">
-								<textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-							</div>
-							<div class="col-12">
-								<input type="submit" value="Send Message" class="btn btn-primary" />
-							</div>
+					<?= form_open(base_url('sendMail')); ?>
+					<div class="row">
+						<div class="col-6 mb-3">
+							<input type="text" class="form-control" placeholder="Your Name" name="name" />
 						</div>
-					</form>
+						<div class="col-6 mb-3">
+							<input type="email" class="form-control" placeholder="email@gmail.com" name="email" />
+						</div>
+						<div class="col-12 mb-3">
+							<input type="text" class="form-control" placeholder="Subject" name="subject" />
+						</div>
+						<div class="col-12 mb-3">
+							<textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+						</div>
+						<div class="col-12">
+							<input type="submit" value="Send Message" class="btn btn-primary" />
+						</div>
 					</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -107,6 +107,17 @@
 	<script src="<?= base_url('assets/js/navbar.js'); ?>"></script>
 	<script src="<?= base_url('assets/js/counter.js'); ?>"></script>
 	<script src="<?= base_url('assets/js/custom.js'); ?>"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<?php if ($this->session->flashdata('success')) :; ?>
+		<script>
+			Swal.fire({
+				icon: 'success',
+				text: 'Pesan berhasil terkirim!',
+				timer:2000,
+				showConfirmButton: false,
+			});
+		</script>
+	<?php endif; ?>
 </body>
 
 </html>
