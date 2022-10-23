@@ -66,7 +66,7 @@
 							<?php
 							foreach ($news as $key => $val) : ?>
 								<div class="property-item">
-									<a href="property-single.html" class="img">
+									<a href="<?= base_url('/news/detail/' . $val['id']); ?>" class="img">
 										<img src="<?= $val['news_image']; ?>" alt="<?= $val['news_title'];?>" class="img-fluid" />
 									</a>
 									<div class="property-content">

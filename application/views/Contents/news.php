@@ -34,7 +34,7 @@
 				<?php foreach ($news as $key => $val) : ?>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="property-item mb-30">
-							<a href="property-single.html" class="img">
+							<a href="<?= base_url('/news/detail/' . $val['id']); ?>" class="img">
 								<img src="<?= $val['news_image']; ?>" alt="<?= $val['news_title'];?>" class="img-fluid" />
 							</a>
 							<div class="property-content">
