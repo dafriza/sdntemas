@@ -67,7 +67,7 @@
 							foreach ($news as $key => $val) : ?>
 								<div class="property-item">
 									<a href="property-single.html" class="img">
-										<img src="<?= $val['news_image']; ?>" alt="Image" class="img-fluid" />
+										<img src="<?= $val['news_image']; ?>" alt="<?= $val['news_title'];?>" class="img-fluid" />
 									</a>
 									<div class="property-content">
 										<!-- <div class="price mb-2"><span>$1,291,000</span></div> -->
@@ -157,7 +157,7 @@
 					{alumni}
 					<div class="item text-center">
 						<div class="testimonial">
-							<img src="{alumni_image}" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
+							<img src="{alumni_image}" alt="{alumni_name}" class="img-fluid rounded-circle w-25 mb-4" />
 							<div class="rate">
 								<span class="icon-star text-warning"></span>
 								<span class="icon-star text-warning"></span>
@@ -221,7 +221,7 @@
 			<div class="row justify-content-between mb-5">
 				<div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
 					<div class="img-about dots">
-						<img src="<?= $image[1]['source_img'] ?>" alt="Image" class="img-fluid" />
+						<img src="<?= $image[1]['source_img'] ?>" alt="<?= $image[1]['title_img'];?>" class="img-fluid" />
 					</div>
 				</div>
 				<div class="col-lg-4">
@@ -318,7 +318,7 @@
 				<?php foreach ($teacher as $key => $val) : ?>
 					<div class="col-sm-12 col-md-12 col-lg-4 mb-5 mb-lg-0">
 						<div class="h-100 person">
-							<img src="<?= $val['teacher_image']; ?>" alt="Image" class="img-fluid" style="width: 140px;" />
+							<img src="<?= $val['teacher_image']; ?>" alt="<?= $val['teacher_name'];?>" class="img-fluid" style="width: 140px;" />
 							<div class="person-contents">
 								<h2 class="mb-0"><a href="#"><?= $val['teacher_name']; ?></a></h2>
 								<br>

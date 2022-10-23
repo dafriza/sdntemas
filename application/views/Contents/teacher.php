@@ -34,7 +34,7 @@
 				<?php foreach ($teacher as $key => $val) : ?>
 					<div class="col-sm-6 col-md-6 col-lg-4 mb-5">
 						<div class="h-100 person">
-							<img src="<?= $val['teacher_image']; ?>" alt="Image" class="img-fluid" style="width: 140px;" />
+							<img src="<?= $val['teacher_image']; ?>" alt="<?= $val['teacher_name'];?>" class="img-fluid" style="width: 140px;" />
 							<div class="person-contents">
 								<h2 class="mb-0"><a href="#"><?= $val['teacher_name']; ?></a></h2>
 								<br>

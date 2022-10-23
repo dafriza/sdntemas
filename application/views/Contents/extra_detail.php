@@ -37,7 +37,7 @@
 					<div class="row">
 						<div class="col-12">
 							<h2 class="text-center fw-bold" style="color:#595959;"><?= $detail[0]['extra_name']; ?> <span class="<?= $detail[0]['extra_icon'] ?>"></h2>
-							<img src="<?= $detail[0]['extra_image']; ?>" class="img-fluid mx-auto d-block" alt="">
+							<img src="<?= $detail[0]['extra_image']; ?>" class="img-fluid mx-auto d-block" alt="<?= $detail[0]['extra_name'];?>">
 							<div class="row justify-content-between mt-4">
 								<div class="col text-start">
 									<?= $detail[0]['extra_name'] ?> <span class="<?= $detail[0]['extra_icon'] ?>" style="font-size:1rem"></span>

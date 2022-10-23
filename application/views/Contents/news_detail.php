@@ -37,7 +37,7 @@
 					<div class="row">
 						<div class="col-12">
 							<h2 class="text-center fw-bold" style="color:#595959;"><?= $detail[0]['news_title']; ?></h2>
-							<img src="<?= $detail[0]['news_image']; ?>" class="img-fluid mx-auto d-block" alt="">
+							<img src="<?= $detail[0]['news_image']; ?>" class="img-fluid mx-auto d-block" alt="<?= $detail[0]['news_title'];?>">
 							<div class="row justify-content-between mt-4">
 								<div class="col text-start">
 									Penulis : <?= $detail[0]['news_writer']; ?> - <?= date('d-M-Y', strtotime($detail[0]['created_at'])); ?>

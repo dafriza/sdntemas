@@ -37,7 +37,7 @@
 					<div class="row">
 						<div class="col-12">
 							<h2 class="text-center fw-bold" style="color:#595959;"><?= $detail[0]['achievement_name']; ?> <span class="<?= $detail[0]['achievement_icon'] ?>"></h2>
-							<img src="<?= $detail[0]['achievement_image']; ?>" class="img-fluid mx-auto d-block" alt="">
+							<img src="<?= $detail[0]['achievement_image']; ?>" class="img-fluid mx-auto d-block" alt="<?= $detail[0]['achievement_name'];?>">
 							<div class="row justify-content-between mt-4">
 								<div class="col text-start">
 									<?= $detail[0]['achievement_name'] ?> <span class="<?= $detail[0]['achievement_icon'] ?>" style="font-size:1rem"></span>
@@ -58,11 +58,11 @@
 			<div class="col-md-2"></div>
 		</div>
 		<div class="container">
-			<div class="row">
+			<div class="row d-flex justify-content-center">
 				<?php foreach ($achieve as $key => $val) : ?>
-					<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mb-4 d-flex justify-content-center">
+					<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
 						<div class="card col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12">
-							<img src="<?= $val['achieve_img']; ?>" alt="">
+							<img src="<?= $val['achieve_img']; ?>" alt="<?= $val['achieve_name'];?>">
 							<div class="card-body">
 								<?= $val['achieve_name']; ?>
 							</div>

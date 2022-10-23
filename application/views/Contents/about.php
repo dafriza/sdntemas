@@ -77,7 +77,7 @@
 			<div class="row justify-content-between mb-5">
 				<div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
 					<div class="img-about dots">
-						<img src="<?= $bg_image[0]['source_img'] ?>" alt="Image" class="img-fluid" />
+						<img src="<?= $bg_image[0]['source_img'] ?>" alt="<?= $bg_image[0]['title_img'];?>" class="img-fluid" />
 					</div>
 				</div>
 				<div class="col-lg-4">
@@ -129,7 +129,7 @@
 			<div class="row justify-content-between mb-5">
 				<div class="col-lg-7 mb-5 mb-lg-0">
 					<div class="img-about dots">
-						<img src="<?= $bg_image[1]['source_img'] ?>" alt="Image" class="img-fluid" />
+						<img src="<?= $bg_image[1]['source_img'] ?>" alt="<?= $bg_image[1]['title_img'];?>" class="img-fluid" />
 					</div>
 				</div>
 				<div class="col-lg-4">
@@ -176,7 +176,7 @@
 		</div>
 	</div>
 
-	<div class="section sec-testimonials bg-light">
+	<!-- <div class="section sec-testimonials bg-light">
 		<div class="container">
 			<div class="row mb-5 align-items-center">
 				<div class="col-md-6">
@@ -320,7 +320,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<?= $this->load->view('Components/Footer', '', TRUE); ?>
 

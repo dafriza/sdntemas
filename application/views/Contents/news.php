@@ -35,7 +35,7 @@
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="property-item mb-30">
 							<a href="property-single.html" class="img">
-								<img src="<?= $val['news_image']; ?>" alt="Image" class="img-fluid" />
+								<img src="<?= $val['news_image']; ?>" alt="<?= $val['news_title'];?>" class="img-fluid" />
 							</a>
 							<div class="property-content">
 								<div>
